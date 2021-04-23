@@ -1,11 +1,14 @@
 # Cryptr with Laravel API
 
-## [01 Create a Laravel app](https://github.com/cryptr-examples/cryptr-laravel-api-sample/tree/01-create-laravel-app)
+## 02 - Add your Cryptr credentials
 
-## [02 Add your cryptr credentials](https://github.com/cryptr-examples/cryptr-laravel-api-sample/tree/02-add-your-cryptr-credentials)
+🛠 Complete the .env file with the variables that you get when creating your application at the end of Cryptr Onboarding or on your Cryptr application. Don't forget to replace `YOUR_CLIENT_ID` & `YOUR_DOMAIN`
 
-## [03 Validate access tokens](https://github.com/cryptr-examples/cryptr-laravel-api-sample/tree/03-validate-access-tokens)
+```javascript
+CRYPTR_BASE_URL=http://localhost:4000
+TENANT_DOMAIN=YOUR_DOMAIN
+DEFAULT_REDIRECT_URI=http://localhost:8080
+CLIENT_ID=YOUR_CLIENT_ID
+```
 
-## [04 Protect API Endpoints](https://github.com/cryptr-examples/cryptr-laravel-api-sample/tree/04-protect-api-endpoints)
-
-## [05 Bonus](https://github.com/cryptr-examples/cryptr-laravel-api-sample/tree/05-bonus)
+[Next](https://github.com/cryptr-examples/cryptr-laravel-api-sample/tree/03-validate-access-tokens)

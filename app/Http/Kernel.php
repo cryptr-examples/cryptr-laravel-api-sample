@@ -43,6 +43,7 @@ class Kernel extends HttpKernel
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
+        'cryptr-guard' => [\App\Http\Middleware\CryptrGuard::class]
     ];
 
     /**

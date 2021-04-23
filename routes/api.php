@@ -15,4 +15,6 @@ use App\Http\Controllers\Api\CourseController;
 |
 */
 
-Route::apiResource('courses', CourseController::class);
+Route::prefix('/')->middleware('cryptr-guard')->group(function () {
+  Route::apiResource('courses', CourseController::class);
+});

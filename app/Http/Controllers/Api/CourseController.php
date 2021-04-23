@@ -13,8 +13,9 @@ class CourseController extends Controller
     *
     * @return \Illuminate\Http\Response
     */
-   public function index()
+   public function index(Request $request)
    {
+        error_log(serialize($request->session()->get('cryptr-user')));
         return response()->json(
             [array(
                 "id" => 1,

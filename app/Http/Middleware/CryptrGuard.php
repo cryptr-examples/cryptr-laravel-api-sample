@@ -57,6 +57,8 @@ class CryptrGuard
            // 2.2 Validate token with
            $decoded = $cryptrJwtVerifier->validate($request->bearerToken(), $jwks);
  
+           $request->session()->put('cryptr-user', $decoded);
+
            // 1.bis Add headers to response
            $response = $next($request);
            foreach($headers as $key => $value){
